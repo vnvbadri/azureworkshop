@@ -22,6 +22,7 @@
      "Microsoft.Compute/availabilitySets/*",
      "Microsoft.Storage/storageAccounts/*",
      "Microsoft.Storage/register/action",
+     "Microsoft.Authorization/roleAssignments/write",
      "Microsoft.ContainerService/managedClusters/write"
   ],
   "NotActions": [
