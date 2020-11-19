@@ -35,6 +35,18 @@
             {
               "field": "type",
               "like": "Microsoft.Network/virtualNetworks/*"
+            },  
+            {
+              "field": "type",
+              "like": "Microsoft.Network/virtualNetworks/write"
+            },
+            {
+              "field": "type",
+              "like": "Microsoft.Network/virtualNetworks/subnets/*"  
+            },
+            {
+              "field": "type",
+              "like": "Microsoft.Network/virtualNetworks/write"
             },
             {
               "field": "type",
@@ -50,7 +62,7 @@
             },
             {
               "field": "type",
-              "in": [ "Microsoft.Compute/disks", "Microsoft.Compute/virtualMachines", "Microsoft.Compute/virtualMachines/write", "Microsoft.Compute/virtualMachines/extensions", "Microsoft.Network/networkInterfaces", "Microsoft.Network/networkSecurityGroups", "Microsoft.Network/publicIPAddresses", "Microsoft.Network/virtualNetworks", "Microsoft.Storage/storageAccounts", "Microsoft.ContainerService/managedClusters/write", "Microsoft.Compute/availabilitySets" ]
+              "in": [ "Microsoft.Compute/disks", "Microsoft.Compute/virtualMachines", "Microsoft.Compute/virtualMachines/write", "Microsoft.Compute/virtualMachines/extensions", "Microsoft.Network/networkInterfaces", "Microsoft.Network/networkSecurityGroups", "Microsoft.Network/publicIPAddresses", "Microsoft.Network/virtualNetworks", "Microsoft.Storage/storageAccounts", "Microsoft.ContainerService/managedClusters/write", "Microsoft.Compute/availabilitySets", "Microsoft.ClassicNetwork/virtualNetworks/write", "Microsoft.Network/virtualNetworks/subnets", "Microsoft.Network/virtualNetworks/subnets/write" ]
             }
           ]
         }
