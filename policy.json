@@ -62,7 +62,7 @@
             },
             {
               "field": "type",
-              "like": "Microsoft.Compute/virtualMachineScaleSets"
+              "like": "Microsoft.Compute/virtualMachineScaleSets/write"
             },
             {
               "field": "type",
@@ -71,7 +71,7 @@
 
             {
               "field": "type",
-              "in": [ "Microsoft.Compute/disks", "Microsoft.Compute/virtualMachines", "Microsoft.Compute/virtualMachines/write", "Microsoft.Compute/virtualMachines/extensions", "Microsoft.Network/networkInterfaces", "Microsoft.Network/networkSecurityGroups", "Microsoft.Network/publicIPAddresses", "Microsoft.Network/virtualNetworks", "Microsoft.Storage/storageAccounts", "Microsoft.ContainerService/managedClusters/", "Microsoft.Compute/availabilitySets", "Microsoft.ClassicNetwork/virtualNetworks/write", "Microsoft.Network/virtualNetworks/subnets", "Microsoft.Network/virtualNetworks/subnets/", "Microsoft.Authorization/roleAssignments/write" ]
+              "in": [ "Microsoft.Compute/disks", "Microsoft.Compute/virtualMachines", "Microsoft.Compute/virtualMachines/write", "Microsoft.Compute/virtualMachines/extensions", "Microsoft.Network/networkInterfaces", "Microsoft.Network/networkSecurityGroups", "Microsoft.Network/publicIPAddresses", "Microsoft.Network/virtualNetworks", "Microsoft.Storage/storageAccounts", "Microsoft.ContainerService/managedClusters/", "Microsoft.Compute/availabilitySets", "Microsoft.ClassicNetwork/virtualNetworks/write", "Microsoft.Network/virtualNetworks/subnets", "Microsoft.Network/virtualNetworks/subnets/", "Microsoft.Authorization/roleAssignments/write", "Microsoft.Compute/virtualMachineScaleSets/write" ]
             }
           ]
         }
