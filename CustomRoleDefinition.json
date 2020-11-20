@@ -23,7 +23,7 @@
      "Microsoft.Storage/storageAccounts/*",
      "Microsoft.Storage/register/action",
      "Microsoft.Authorization/roleAssignments/write",
-     "Microsoft.Compute/virtualMachineScaleSets",
+     "Microsoft.Compute/virtualMachineScaleSets/write",
      "Microsoft.ContainerService/managedClusters/write"
   ],
   "NotActions": [
