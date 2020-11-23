@@ -1,8 +1,8 @@
 {
-  "Name":"Spektra Custom RBAC",
+  "Name":"Azure-JFrog AKS Custom RBAC",
   "Id":null,
   "IsCustom":true,
-  "Description":"Spektra Training Custom Role.",
+  "Description":"Azure-JFrog AKS Custom RBAC",
   "Actions":[
      "Microsoft.Authorization/*/read",
      "Microsoft.Compute/disks/*",
