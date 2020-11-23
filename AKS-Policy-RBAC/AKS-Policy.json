@@ -42,7 +42,7 @@
             },
             {
               "field": "type",
-              "in": [ "Microsoft.Compute/disks", "Microsoft.Network/publicIPAddresses", "Microsoft.Storage/storageAccounts", "Microsoft.ContainerService/managedClusters", "Microsoft.Network/virtualNetworks", "Microsoft.Network/virtualNetworks/subnets", "Microsoft.Authorization/roleAssignments", "Microsoft.Compute/virtualMachineScaleSets" ]
+              "in": [ "Microsoft.Compute/disks", "Microsoft.Network/publicIPAddresses", "Microsoft.Storage/storageAccounts", "Microsoft.ContainerService/managedClusters", "Microsoft.Network/virtualNetworks", "Microsoft.Network/virtualNetworks/subnets", "Microsoft.Authorization/roleAssignments", "Microsoft.Compute/virtualMachineScaleSets", "Microsoft.Network/networkSecurityGroups" ]
             }
           ]
         }
