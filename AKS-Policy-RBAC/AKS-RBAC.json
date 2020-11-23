@@ -17,6 +17,7 @@
      "Microsoft.Authorization/roleAssignments/write",
      "Microsoft.Compute/virtualMachineScaleSets/write",
      "Microsoft.ContainerService/managedClusters/write",
+     "Microsoft.ContainerService/managedClusters/agentPools/write",
      "Microsoft.ContainerService/managedClusters/listClusterUserCredential/action"
   ],
   "NotActions": [
