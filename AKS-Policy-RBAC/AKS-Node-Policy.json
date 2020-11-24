@@ -1,0 +1,29 @@
+{
+    "mode": "All",
+    "parameters": {
+      "listOfAllowedVMSize": {
+        "type": "Array"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.ContainerService/managedClusters"
+          },
+          {
+            "field": "Microsoft.ContainerService/managedClusters/agentPools/vmSize",
+            "notIn": "Standard_DS2_v2"
+          },
+          {
+            "field": "Microsoft.ContainerService/managedClusters/agentPools/count",
+            "notEquals": "2"
+          }
+        ]
+      },
+      "then": {
+        "effect": "deny"
+      }
+    }
+  }
