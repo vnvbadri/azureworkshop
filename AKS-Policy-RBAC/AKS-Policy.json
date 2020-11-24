@@ -75,12 +75,16 @@
             "not": {
               "allOf": [
                 {
-                  "field": "Microsoft.Compute/virtualMachineScaleSets/sku.capacity",
-                  "in": [ "2" ]
-                }, 
+                  "field": "Microsoft.Compute/VirtualMachineScaleSets/sku.name",
+                  "in": [ "Standard_DS2_v2" ]
+                },
                 {
                   "field": "Microsoft.Compute/VirtualMachineScaleSets/sku.tier",
-                  "in": [ "Standard_DS2_v2" ]
+                  "in": [ "Standard" ]
+                },
+                {
+                  "field": "Microsoft.Compute/virtualMachineScaleSets/sku.capacity",
+                  "in": [ "2" ]
                 }
               ]
             }
