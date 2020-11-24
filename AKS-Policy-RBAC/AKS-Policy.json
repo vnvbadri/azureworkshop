@@ -68,19 +68,19 @@
       {
         "allOf": [
           {
-            "field":"type",
-            "equals":"Microsoft.ContainerService/managedClusters"
+            "field": "type",
+            "equals": "Microsoft.Compute/virtualMachineScaleSets"
           },
           {
             "not": {
               "allOf": [
                 {
-                  "field": "Microsoft.ContainerService/managedClusters/agentPools/vmSize",
-                  "in": [ "Standard_DS2_v2" ]
-                },
+                  "field": "Microsoft.Compute/virtualMachineScaleSets/capacity",
+                  "in": [ "2" ]
+                }, 
                 {
-                  "field": "Microsoft.ContainerService/managedClusters/agentPools/count",
-                  "equals": "2"
+                  "field": "Microsoft.Compute/virtualMachineScaleSets/sku.name",
+                  "in": [ "Standard_DS2_v2" ]
                 }
               ]
             }
