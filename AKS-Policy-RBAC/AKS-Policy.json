@@ -80,7 +80,7 @@
                 },
                 {
                   "field": "Microsoft.ContainerService/managedClusters/agentPools/count",
-                  "in": [ "2" ]
+                  "equals": [ "2" ]
                 }
               ]
             }
