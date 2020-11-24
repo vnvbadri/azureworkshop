@@ -68,22 +68,16 @@
       {
         "allOf": [
           {
-            "field":"type",
-            "equals":"Microsoft.ContainerService/managedClusters/agentPools"
+            "field": "type",
+            "equals": "Microsoft.ContainerService/managedClusters"
           },
           {
-            "not": {
-              "allOf": [
-                {
-                  "field": "Microsoft.ContainerService/managedClusters/agentPools/vmSize",
-                  "in": [ "Standard_DS2_v2" ]
-                },
-                {
-                  "field": "Microsoft.ContainerService/managedClusters/agentPools/count",
-                  "in": [ "2" ]
-                }
-              ]
-            }
+            "field": "Microsoft.ContainerService/managedClusters/agentPools/vmSize",
+            "notIn": [ "Standard_DS2_v2" ]
+          },
+          {
+            "field": "Microsoft.ContainerService/managedClusters/agentPools/count",
+            "notEquals": [ "2" ]
           }
         ]
       },
