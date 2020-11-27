@@ -1,0 +1,69 @@
+{
+    "if": {
+      "anyOf": [
+        {
+          "not": {
+            "anyOf": [
+              {
+                "field": "type",
+                "like": "microsoft.insights/components/*"
+              },
+              {
+                "field": "type",
+                "like": "Microsoft.Sql/servers/*"
+              },
+              {
+                "field": "type",
+                "like": "Microsoft.Sql/servers/databases/*"
+              },
+              {
+                "field": "type",
+                "like": "Microsoft.Web/serverFarms/*"
+              },
+              {
+                "field": "type",
+                "like": "Microsoft.Web/sites/*"
+              },
+              {
+                "field": "type",
+                "in": [ "microsoft.insights/components", "Microsoft.Sql/servers", "Microsoft.Sql/servers/databases", "Microsoft.Web/serverFarms", "Microsoft.Web/sites" ]
+              }
+            ]
+          }
+        },
+        {
+          "allof": [
+            {
+              "field": "type",
+              "equals": "Microsoft.SQL/servers/databases"
+            },
+            {
+              "not": {
+                "field": "Microsoft.Sql/servers/databases/requestedServiceObjectiveName",
+                "in": [ "GP_Gen5_2", "System2" ]
+              }
+            }
+          ]
+        },
+        {
+          "allof": [
+            {
+              "field": "type",
+              "equals": "Microsoft.Web/serverfarms"
+            },
+            {
+              "not": {
+                "field": "Microsoft.Web/serverfarms/sku.name",
+                "in": [ "S1" ]
+              }
+            }
+          ]
+        }
+  
+      ]
+    },
+    "then": {
+      "effect": "deny"
+    }
+  }
+  
