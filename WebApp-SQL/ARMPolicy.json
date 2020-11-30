@@ -35,12 +35,30 @@
           "allof": [
             {
               "field": "type",
-              "equals": "Microsoft.DBforMySQL/servers/databases"
+              "equals": "Microsoft.DBforMySQL/servers/"
             },
             {
               "not": {
-                "field": "Microsoft.DBforMySQL/servers/databases/requestedServiceObjectiveName",
-                "in": [ "GP_Gen5_2", "System2" ]
+                "field": "Microsoft.DBforMySQL/servers/name/",
+                "in": [ "GP_Gen5_2" ]
+              }
+            },
+            {
+              "not": {
+                "field": "Microsoft.DBforMySQL/servers/tier/",
+                "in": [ "Basic" ]
+              }
+            },
+            {
+              "not": {
+                "field": "Microsoft.DBforMySQL/servers/family/",
+                "in": [ "Gen5" ]
+              }
+            },
+            {
+              "not": {
+                "field": "Microsoft.DBforMySQL/servers/capacity",
+                "in": [ "2" ]
               }
             }
           ]
