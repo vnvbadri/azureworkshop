@@ -39,25 +39,25 @@
             },
             {
               "not": {
-                "field": "Microsoft.DBforMySQL/servers/name/",
+                "field": "Microsoft.DBforMySQL/servers/sku.name/",
                 "in": [ "GP_Gen5_2" ]
               }
             },
             {
               "not": {
-                "field": "Microsoft.DBforMySQL/servers/tier/",
+                "field": "Microsoft.DBforMySQL/servers/sku.tier/",
                 "in": [ "Basic" ]
               }
             },
             {
               "not": {
-                "field": "Microsoft.DBforMySQL/servers/family/",
+                "field": "Microsoft.DBforMySQL/servers/sku.family/",
                 "in": [ "Gen5" ]
               }
             },
             {
               "not": {
-                "field": "Microsoft.DBforMySQL/servers/capacity",
+                "field": "Microsoft.DBforMySQL/servers/sku.capacity",
                 "in": [ "2" ]
               }
             }
