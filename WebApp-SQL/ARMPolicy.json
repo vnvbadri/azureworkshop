@@ -6,23 +6,23 @@
             "anyOf": [
               {
                 "field": "type",
-                "like": "Microsoft.Insights/Components/"
+                "like": "Microsoft.Insights/Components"
               },
               {
                 "field": "type",
-                "like": "Microsoft.DBforMySQL/servers/"
+                "like": "Microsoft.DBforMySQL/servers"
               },
               {
                 "field": "type",
-                "like": "Microsoft.DBforMySQL/servers/databases/"
+                "like": "Microsoft.DBforMySQL/servers/databases"
               },
               {
                 "field": "type",
-                "like": "Microsoft.Web/serverFarms/"
+                "like": "Microsoft.Web/serverFarms"
               },
               {
                 "field": "type",
-                "like": "Microsoft.Web/sites/"
+                "like": "Microsoft.Web/sites"
               },
               {
                 "field": "type",
@@ -35,23 +35,23 @@
           "allof": [
             {
               "field": "type",
-              "equals": "Microsoft.DBforMySQL/servers/"
+              "equals": "Microsoft.DBforMySQL/servers"
             },
             {
               "not": {
-                "field": "Microsoft.DBforMySQL/servers/sku.name/",
+                "field": "Microsoft.DBforMySQL/servers/sku.name",
                 "in": [ "GP_Gen5_2" ]
               }
             },
             {
               "not": {
-                "field": "Microsoft.DBforMySQL/servers/sku.tier/",
+                "field": "Microsoft.DBforMySQL/servers/sku.tier",
                 "in": [ "Basic" ]
               }
             },
             {
               "not": {
-                "field": "Microsoft.DBforMySQL/servers/sku.family/",
+                "field": "Microsoft.DBforMySQL/servers/sku.family",
                 "in": [ "Gen5" ]
               }
             },
