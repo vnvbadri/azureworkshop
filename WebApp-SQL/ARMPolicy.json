@@ -6,27 +6,27 @@
             "anyOf": [
               {
                 "field": "type",
-                "like": "microsoft.insights/components/*"
+                "like": "Microsoft.Insights/Components/"
               },
               {
                 "field": "type",
-                "like": "Microsoft.Sql/servers/*"
+                "like": "Microsoft.DBforMySQL/servers/"
               },
               {
                 "field": "type",
-                "like": "Microsoft.Sql/servers/databases/*"
+                "like": "Microsoft.DBforMySQL/servers/databases/"
               },
               {
                 "field": "type",
-                "like": "Microsoft.Web/serverFarms/*"
+                "like": "Microsoft.Web/serverFarms/"
               },
               {
                 "field": "type",
-                "like": "Microsoft.Web/sites/*"
+                "like": "Microsoft.Web/sites/"
               },
               {
                 "field": "type",
-                "in": [ "microsoft.insights/components", "Microsoft.Sql/servers", "Microsoft.Sql/servers/databases", "Microsoft.Web/serverFarms", "Microsoft.Web/sites" ]
+                "in": [ "Microsoft.Insights/Components", "Microsoft.DBforMySQL/servers/", "Microsoft.DBforMySQL/servers/databases", "Microsoft.Web/serverFarms", "Microsoft.Web/sites" ]
               }
             ]
           }
@@ -35,11 +35,11 @@
           "allof": [
             {
               "field": "type",
-              "equals": "Microsoft.SQL/servers/databases"
+              "equals": "Microsoft.DBforMySQL/servers/databases"
             },
             {
               "not": {
-                "field": "Microsoft.Sql/servers/databases/requestedServiceObjectiveName",
+                "field": "Microsoft.DBforMySQL/servers/databases/requestedServiceObjectiveName",
                 "in": [ "GP_Gen5_2", "System2" ]
               }
             }
