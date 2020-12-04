@@ -1,0 +1,15 @@
+﻿[
+  {
+    "ResourceType": "Microsoft.Sql/servers/databases",
+    "Parameter": [
+      {
+        "Name": "max-DW",
+        "Value": "500"
+      },
+      {
+        "Name": "max-VCores",
+        "Value": "2"
+      }
+    ]
+  }
+]
