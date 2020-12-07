@@ -35,7 +35,7 @@
           "allof": [
             {
               "field": "type",
-              "equals": "Microsoft.Sql/servers"
+              "equals": "Microsoft.Sql/servers/databases"
             },
             {
               "not": {
@@ -60,7 +60,33 @@
                 "field": "Microsoft.Sql/servers/sku.capacity",
                 "in": [ "2" ]
               }
-            }
+            },
+            {
+              "not": {
+                "field": "Microsoft.Sql/servers/kind.storageAccountType",
+                "in": [ "LRS" ]
+              }
+            } 
+          ]
+        },
+        {
+          "allof": [
+            {
+              "field": "kind",
+              "equals": "Microsoft.Sql/servers/databases"
+            },
+            {
+              "not": {
+                "field": "Microsoft.Sql/servers/properties.collation",
+                "in": [ "SQL_Latin1_General_CP1_CI_AS" ]
+              }
+            },
+            {
+              "not": {
+                "field": "Microsoft.Sql/servers/properties.storageAccountType",
+                "in": [ "LRS" ]
+              }
+            } 
           ]
         },
         {
@@ -73,6 +99,30 @@
               "not": {
                 "field": "Microsoft.Web/serverfarms/sku.name",
                 "in": [ "S1" ]
+              }
+            },
+            {
+              "not": {
+                "field": "Microsoft.Web/serverfarms/sku.tier",
+                "in": [ "Standard" ]
+              }
+            },
+            {
+              "not": {
+                "field": "Microsoft.Web/serverfarms/sku.size",
+                "in": [ "S1" ]
+              }
+            },
+            {
+              "not": {
+                "field": "Microsoft.Web/serverfarms/sku.family",
+                "in": [ "S" ]
+              }
+            },
+            {
+              "not": {
+                "field": "Microsoft.Web/serverfarms/sku.capacity",
+                "in": [ "1" ]
               }
             }
           ]
