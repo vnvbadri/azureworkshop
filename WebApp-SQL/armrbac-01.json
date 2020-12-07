@@ -9,6 +9,7 @@
     "Microsoft.Resources/deployments/*",
     "Microsoft.Resources/subscriptions/resourceGroups/read",
     "Microsoft.Sql/servers/*",
+    "Microsoft.Sql/servers/databases/write",
     "Microsoft.Sql/servers/databases/*",
     "Microsoft.Web/serverFarms/*",
     "Microsoft.Web/sites/*"
