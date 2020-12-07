@@ -39,7 +39,7 @@
         "allof": [
           {
             "field": "type",
-            "equals": "Microsoft.SQL/servers/databases"
+            "equals": "Microsoft.Sql/servers/databases"
           },
           {
             "not": {
