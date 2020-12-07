@@ -39,25 +39,25 @@
         "allOf": [
           {
             "field": "type",
-            "equals": "Microsoft.Sql/servers/databases"
+            "equals": "Microsoft.Sql/servers"
           },
           {
             "not": {
               "allOf": [
                 {
-                  "field": "Microsoft.Sql/servers/databases/sku.name",
+                  "field": "Microsoft.Sql/servers/sku.name",
                   "in": [ "GP_Gen5" ]
                 },
                 {
-                  "field": "Microsoft.Sql/servers/databases/sku.tier",
+                  "field": "Microsoft.Sql/servers/sku.tier",
                   "in": [ "GeneralPurpose" ]
                 },
                 {
-                  "field": "Microsoft.Sql/servers/databases/sku.family",
+                  "field": "Microsoft.Sql/servers/sku.family",
                   "in": [ "Gen5" ]
                 },
                 {
-                  "field": "Microsoft.Sql/servers/databases/sku.capacity",
+                  "field": "Microsoft.Sql/servers/sku.capacity",
                   "in": [ "2" ]
                 }
               ]
