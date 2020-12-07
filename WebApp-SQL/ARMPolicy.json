@@ -10,11 +10,11 @@
               },
               {
                 "field": "type",
-                "like": "Microsoft.DBforMySQL/servers"
+                "like": "Microsoft.SQL/servers"
               },
               {
                 "field": "type",
-                "like": "Microsoft.DBforMySQL/servers/databases"
+                "like": "Microsoft.SQL/servers/databases"
               },
               {
                 "field": "type",
@@ -26,7 +26,7 @@
               },
               {
                 "field": "type",
-                "in": [ "Microsoft.Insights/Components", "Microsoft.DBforMySQL/servers/", "Microsoft.DBforMySQL/servers/databases", "Microsoft.Web/serverFarms", "Microsoft.Web/sites" ]
+                "in": [ "Microsoft.Insights/Components", "Microsoft.SQL/servers/", "Microsoft.SQL/servers/databases", "Microsoft.Web/serverFarms", "Microsoft.Web/sites" ]
               }
             ]
           }
@@ -35,29 +35,29 @@
           "allof": [
             {
               "field": "type",
-              "equals": "Microsoft.DBforMySQL/servers"
+              "equals": "Microsoft.SQL/servers"
             },
             {
               "not": {
-                "field": "Microsoft.DBforMySQL/servers/sku.name",
+                "field": "Microsoft.SQL/servers/sku.name",
                 "in": [ "GP_Gen5_2" ]
               }
             },
             {
               "not": {
-                "field": "Microsoft.DBforMySQL/servers/sku.tier",
-                "in": [ "Basic" ]
+                "field": "Microsoft.SQL/servers/sku.tier",
+                "in": [ "GeneralPurpose" ]
               }
             },
             {
               "not": {
-                "field": "Microsoft.DBforMySQL/servers/sku.family",
+                "field": "Microsoft.SQL/servers/sku.family",
                 "in": [ "Gen5" ]
               }
             },
             {
               "not": {
-                "field": "Microsoft.DBforMySQL/servers/sku.capacity",
+                "field": "Microsoft.SQL/servers/sku.capacity",
                 "in": [ "2" ]
               }
             }
