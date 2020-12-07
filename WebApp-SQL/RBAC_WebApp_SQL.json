@@ -9,7 +9,6 @@
       "Microsoft.Resources/deployments/*",
       "Microsoft.Resources/subscriptions/resourceGroups/read",
       "Microsoft.SQL/servers/write",
-      "Microsoft.SQL/servers/firewallRules/write",
       "Microsoft.SQL/servers/databases/write",
       "Microsoft.Web/serverFarms/*",
       "Microsoft.Web/sites/*"
