@@ -6,7 +6,7 @@
           "anyOf": [
             {
               "field": "type",
-              "like": "microsoft.insights/components/*"
+              "like": "Microsoft.Insights/Components/*"
             },
             {
               "field": "type",
@@ -14,7 +14,7 @@
             },
             {
               "field": "type",
-              "like": "Microsoft.Sql/servers/databases/*"
+              "like": " /*"
             },
             {
               "field": "type",
@@ -26,7 +26,7 @@
             },
             {
               "field": "type",
-              "in": [ "Microsoft.insights/components", "Microsoft.Sql/servers", "Microsoft.Sql/servers/databases", "Microsoft.Web/serverFarms", "Microsoft.Web/sites" ]
+              "in": [ "Microsoft.Insights/Components", "Microsoft.Sql/servers", "Microsoft.Sql/servers/databases", "Microsoft.Web/serverFarms", "Microsoft.Web/sites" ]
             }
           ]
         }
@@ -35,7 +35,7 @@
         "allof": [
           {
             "field": "type",
-            "equals": "Microsoft.SQL/servers/databases"
+            "equals": "Microsoft.Sql/servers/databases"
           },
           {
             "not": {
