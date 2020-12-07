@@ -6,23 +6,23 @@
           "anyOf": [
             {
               "field": "type",
-              "like": "Microsoft.Insights/Components/*"
+              "like": "Microsoft.Insights/Components/"
             },
             {
               "field": "type",
-              "like": "Microsoft.Sql/servers/*"
+              "like": "Microsoft.Sql/servers/"
             },
             {
               "field": "type",
-              "like": " /*"
+              "like": "Microsoft.Sql/servers/databases"
             },
             {
               "field": "type",
-              "like": "Microsoft.Web/serverFarms/*"
+              "like": "Microsoft.Web/serverFarms/"
             },
             {
               "field": "type",
-              "like": "Microsoft.Web/sites/*"
+              "like": "Microsoft.Web/sites/"
             },
             {
               "field": "type",
@@ -35,12 +35,12 @@
         "allof": [
           {
             "field": "type",
-            "equals": "Microsoft.Sql/servers/databases"
+            "equals": "Microsoft.SQL/servers/databases"
           },
           {
             "not": {
               "field": "Microsoft.Sql/servers/databases/requestedServiceObjectiveName",
-              "in": [ "GP_Gen5_2", "System2" ]
+              "in": [ "GP_Gen5_2" ]
             }
           }
         ]
