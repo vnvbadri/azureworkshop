@@ -6,11 +6,19 @@
           "anyOf": [
             {
               "field": "type",
-              "like": "Microsoft.Insights/Components/"
+              "like": "microsoft.insights/components"
             },
             {
               "field": "type",
-              "like": "Microsoft.Sql/servers/"
+              "like": "microsoft.insights/actiongroups"
+            },
+            {
+              "field": "type",
+              "like": "Microsoft.Sql/servers"
+            },
+            {
+              "field": "type",
+              "like": "Microsoft.Web/serverFarms"
             },
             {
               "field": "type",
@@ -18,15 +26,11 @@
             },
             {
               "field": "type",
-              "like": "Microsoft.Web/serverFarms/"
+              "like": "Microsoft.Web/sites"
             },
             {
               "field": "type",
-              "like": "Microsoft.Web/sites/"
-            },
-            {
-              "field": "type",
-              "in": [ "Microsoft.Insights/Components", "Microsoft.Sql/servers", "Microsoft.Sql/servers/databases", "Microsoft.Web/serverFarms", "Microsoft.Web/sites" ]
+              "in": [ "microsoft.insights/components", "microsoft.insights/actiongroups", "Microsoft.Sql/servers", "Microsoft.Sql/servers/databases", "Microsoft.Web/serverFarms", "Microsoft.Web/sites" ]
             }
           ]
         }
