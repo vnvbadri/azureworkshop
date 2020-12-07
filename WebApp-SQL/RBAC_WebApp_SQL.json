@@ -8,9 +8,8 @@
       "microsoft.insights/components/*",
       "Microsoft.Resources/deployments/*",
       "Microsoft.Resources/subscriptions/resourceGroups/read",
-      "Microsoft.DBforMySQL/servers/write",
-      "Microsoft.DBforMySQL/servers/firewallRules/write",
-      "Microsoft.DBforMySQL/servers/databases/write",
+      "Microsoft.Sql/servers/write",
+      "Microsoft.Sql/servers/databases/write",
       "Microsoft.Web/serverFarms/*",
       "Microsoft.Web/sites/*"
     ],
