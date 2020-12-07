@@ -8,8 +8,13 @@
       "microsoft.insights/components/*",
       "Microsoft.Resources/deployments/*",
       "Microsoft.Resources/subscriptions/resourceGroups/read",
+<<<<<<< HEAD
       "Microsoft.Sql/servers/write",
       "Microsoft.Sql/servers/databases/write",
+=======
+      "Microsoft.SQL/servers/write",
+      "Microsoft.SQL/servers/databases/write",
+>>>>>>> 3d35627c1145c1d4681e029720c623914cb39949
       "Microsoft.Web/serverFarms/*",
       "Microsoft.Web/sites/*"
     ],
