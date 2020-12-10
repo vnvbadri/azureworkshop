@@ -84,24 +84,6 @@
               "field": "Microsoft.Web/serverfarms/sku.tier",
               "in": [ "Standard" ]
             }
-          },
-          {
-            "not": {
-              "field": "Microsoft.Web/serverfarms/sku.size",
-              "in": [ "S1" ]
-            }
-          },
-          {
-            "not": {
-              "field": "Microsoft.Web/serverfarms/sku.family",
-              "in": [ "S" ]
-            }
-          },
-          {
-            "not": {
-              "field": "Microsoft.Web/serverfarms/sku.capacity",
-              "in": [ "1" ]
-            }
           }
         ]
       }
