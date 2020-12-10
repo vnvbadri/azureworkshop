@@ -44,7 +44,7 @@
           {
             "not": {
               "field": "Microsoft.Sql/servers/databases/sku.name",
-              "in": [ "GP_Gen5_2" ]
+              "in": [ "GP_Gen5" ]
             }
           },
           {
