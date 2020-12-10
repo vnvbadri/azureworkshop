@@ -6,23 +6,23 @@
           "anyOf": [
             {
               "field": "type",
-              "like": "microsoft.insights/components/*"
+              "like": "microsoft.insights/components"
             },
             {
               "field": "type",
-              "like": "Microsoft.Sql/servers/*"
+              "like": "Microsoft.Sql/servers"
             },
             {
               "field": "type",
-              "like": "Microsoft.Sql/servers/databases/*"
+              "like": "Microsoft.Sql/servers/databases"
             },
             {
               "field": "type",
-              "like": "Microsoft.Web/serverFarms/*"
+              "like": "Microsoft.Web/serverFarms"
             },
             {
               "field": "type",
-              "like": "Microsoft.Web/sites/*"
+              "like": "Microsoft.Web/sites"
             },
             {
               "field": "type",
@@ -39,12 +39,30 @@
         "allof": [
           {
             "field": "type",
-            "equals": "Microsoft.SQL/servers/databases"
+            "equals": "Microsoft.Sql/servers/databases"
           },
           {
             "not": {
-              "field": "Microsoft.Sql/servers/databases/requestedServiceObjectiveName",
-              "in": [ "GP_Gen5_2", "System2" ]
+              "field": "Microsoft.Sql/servers/sku.name",
+              "in": [ "GP_Gen5_2" ]
+            }
+          },
+          {
+            "not": {
+              "field": "Microsoft.Sql/servers/sku.tier",
+              "in": [ "GeneralPurpose" ]
+            }
+          },
+          {
+            "not": {
+              "field": "Microsoft.Sql/servers/sku.family",
+              "in": [ "Gen5" ]
+            }
+          },
+          {
+            "not": {
+              "field": "Microsoft.Sql/servers/sku.capacity",
+              "in": [ "2" ]
             }
           }
         ]
