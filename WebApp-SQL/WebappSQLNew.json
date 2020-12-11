@@ -34,40 +34,6 @@
             }
           ]
         }
-      },
-      {
-        "allof": [
-          {
-            "field": "type",
-            "equals": "Microsoft.Sql/servers/databases"
-          },
-          {
-            "not": {
-              "field": "Microsoft.Sql/servers/databases/sku.name",
-              "in": [ "GP_Gen5" ]
-            }
-          }
-        ]
-      },
-      {
-        "allof": [
-          {
-            "field": "type",
-            "equals": "Microsoft.Web/serverfarms"
-          },
-          {
-            "not": {
-              "field": "Microsoft.Web/serverfarms/sku.name",
-              "in": [ "S1" ]
-            }
-          },
-          {
-            "not": {
-              "field": "Microsoft.Web/serverfarms/sku.tier",
-              "in": [ "Standard" ]
-            }
-          }
-        ]
       }
 
     ]
