@@ -38,15 +38,11 @@
               },
               {
                 "field": "type",
-                "like": "Microsoft.Compute/availabilitySets"
-              },
-              {
-                "field": "type",
                 "like": "Microsoft.Storage/storageAccounts"
               },
               {
                 "field": "type",
-                "in": [ "Microsoft.Compute/disks", "Microsoft.Compute/virtualMachines", "Microsoft.Compute/virtualMachines/extensions", "Microsoft.Network/networkInterfaces", "Microsoft.Network/networkSecurityGroups", "Microsoft.Network/publicIPAddresses", "Microsoft.Storage/storageAccounts", "Microsoft.Compute/availabilitySets", "Microsoft.Network/virtualNetworks",  "Microsoft.Network/virtualNetworks/subnets" ]
+                "in": [ "Microsoft.Compute/disks", "Microsoft.Compute/virtualMachines", "Microsoft.Compute/virtualMachines/extensions", "Microsoft.Network/networkInterfaces", "Microsoft.Network/networkSecurityGroups", "Microsoft.Network/publicIPAddresses", "Microsoft.Storage/storageAccounts", "Microsoft.Network/virtualNetworks",  "Microsoft.Network/virtualNetworks/subnets" ]
               }
             ]
           }
