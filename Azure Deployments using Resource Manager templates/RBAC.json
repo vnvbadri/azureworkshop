@@ -1,0 +1,24 @@
+{
+  "Name":"Azure-JFrog Docker Custom RBAC",
+  "Id":null,
+  "IsCustom":true,
+  "Description":"Azure-JFrog Docker Custom RBAC",
+  "Actions":[
+     "Microsoft.Authorization/*/read",
+     "Microsoft.Compute/disks/*",
+     "Microsoft.Compute/virtualMachines/*",
+     "Microsoft.Compute/virtualMachines/extensions/*",
+     "Microsoft.Network/networkInterfaces/*",
+     "Microsoft.Network/networkSecurityGroups/*",
+     "Microsoft.Network/publicIPAddresses/*",
+     "Microsoft.Network/virtualNetworks/*",
+     "Microsoft.Network/virtualNetworks/subnets/*",
+     "Microsoft.Network/virtualNetworks/subnets/write",
+     "Microsoft.Resources/deployments/*",
+     "Microsoft.Storage/storageAccounts/*",
+     "Microsoft.Storage/register/action"
+  ],
+  "NotActions": [
+     
+  ]
+}
