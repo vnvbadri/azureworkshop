@@ -1,8 +1,8 @@
 {
-  "Name":"Azure-JFrog Docker Custom RBAC",
+  "Name":"Azure Deployments using Resource Manager templates RBAC",
   "Id":null,
   "IsCustom":true,
-  "Description":"Azure-JFrog Docker Custom RBAC",
+  "Description":"Azure Deployments using Resource Manager templates RBAC",
   "Actions":[
      "Microsoft.Authorization/*/read",
      "Microsoft.Compute/disks/*",
