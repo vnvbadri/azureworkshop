@@ -83,7 +83,7 @@
                     "in": [ "2019-Datacenter" ]
                   },
                   {
-                    "field": "Microsoft.Compute/virtualMachines/version",
+                    "field": "Microsoft.Compute/virtualMachines/imageVersion",
                     "in": [ "latest" ]
                   }, 
                   {
